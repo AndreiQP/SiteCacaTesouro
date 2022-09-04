@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./escolaIcon.png" type="image/png">
+</head>
+<body>
+    <main>
+
+        <div class="telaIntroducao">
+            <div class="contentTelaIntroducao">
+                <h1>Olá Jogador!</h1>
+                <p>Você, como chefe da tripulação, deve guiar seu navio até os X'ses do mapa. Para isto deve:</p>
+                <div class="explicacaoMovimentos">
+                    <p><img src="Imagens/comandos/setaDireita.png" alt="seta Direita"> para andar para a direita</p>
+                    <p><img src="Imagens/comandos/setaEsquerda.png" alt="seta Direita"> para andar para a Esquerda</p>
+                    <p><img src="Imagens/comandos/setaCima.png" alt="seta Direita"> para andar para a Cima</p>
+                    <p><img src="Imagens/comandos/setaBaixo.png" alt="seta Direita"> para andar para a Baixo</p>
+                    <p><img src="Imagens/comandos/pular.png" alt="seta Direita"> para pular, evitar, o vício de seus tripulantes por uma bebidinha</p>
+                    <p><img src="Imagens/comandos/abaixar.png" alt="seta Direita"> para esquivar das brigas que encontrará ao longo do caminho</p>
+                    <p><img src="Imagens/comandos/iniciar.png" alt="seta Direita"> para inicar o trajeto que escolheu!</p>    
+                </div>
+                <p id="ultimoP">Deve ter em mente, queo seu pulo será em direção igual so seu úlitmo movimento!! Não só isto, caso você caia em algum dos obstáculos, se acalme, pois terá uma chance de não perder: lutando contra o 
+                    desafio proposto! Boa sorte, e até lá!
+                </p>
+                <button id="fecharIntroducao">Começar!</button>
+            </div>
+            
+        </div>
+
+        <table id="tabela">
+            <tr>
+                <td id="1">&nbsp</td>
+                <td id="2">&nbsp</td>
+                <td id="3">&nbsp</td>
+                <td id="4">&nbsp</td>
+                <td id="5">&nbsp</td>
+                <td id="6">&nbsp</td>
+                <td id="7">&nbsp</td>
+                <td id="8">&nbsp</td>
+                <td id="9">&nbsp</td>
+                <td id="10">&nbsp</td>
+                <td id="comandosFeitos" rowspan="11"></td>
+            </tr>
+            <tr>
+                <td id="11">&nbsp</td>
+                <td id="12">&nbsp</td>
+                <td id="13">&nbsp</td>
+                <td id="14">&nbsp</td>
+                <td id="15">&nbsp</td>
+                <td id="16">&nbsp</td>
+                <td id="17">&nbsp</td>
+                <td id="18">&nbsp</td>
+                <td id="19">&nbsp</td>
+                <td id="20">&nbsp</td>
+            </tr>
+            <tr>
+                <td id="21">&nbsp</td>
+                <td id="22">&nbsp</td>
+                <td id="23">&nbsp</td>
+                <td id="24">&nbsp</td>
+                <td id="25">&nbsp</td>
+                <td id="26">&nbsp</td>
+                <td id="27">&nbsp</td>
+                <td id="28">&nbsp</td>
+                <td id="29">&nbsp</td>
+                <td id="30">&nbsp</td>
+            </tr>
+            <tr>
+                <td id="31">&nbsp</td>
+                <td id="32">&nbsp</td>
+                <td id="33">&nbsp</td>
+                <td id="34">&nbsp</td>
+                <td id="35">&nbsp</td>
+                <td id="36">&nbsp</td>
+                <td id="37">&nbsp</td>
+                <td id="38">&nbsp</td>
+                <td id="39">&nbsp</td>
+                <td id="40">&nbsp</td>
+            </tr>
+            <tr>
+                <td id="41">&nbsp</td>
+                <td id="42">&nbsp</td>
+                <td id="43">&nbsp</td>
+                <td id="44">&nbsp</td>
+                <td id="45">&nbsp</td>
+                <td id="46">&nbsp</td>
+                <td id="47">&nbsp</td>
+                <td id="48">&nbsp</td>
+                <td id="49">&nbsp</td>
+                <td id="50">&nbsp</td>
+            </tr>
+            <tr>
+                <td id="51">&nbsp</td>
+                <td id="52">&nbsp</td>
+                <td id="53">&nbsp</td>
+                <td id="54">&nbsp</td>
+                <td id="55">&nbsp</td>
+                <td id="56">&nbsp</td>
+                <td id="57">&nbsp</td>
+                <td id="58">&nbsp</td>
+                <td id="59">&nbsp</td>
+                <td id="60">&nbsp</td>
+            </tr>
+            <tr>
+                <td id="61">&nbsp</td>
+                <td id="62">&nbsp</td>
+                <td id="63">&nbsp</td>
+                <td id="64">&nbsp</td>
+                <td id="65">&nbsp</td>
+                <td id="66">&nbsp</td>
+                <td id="67">&nbsp</td>
+                <td id="68">&nbsp</td>
+                <td id="69">&nbsp</td>
+                <td id="70">&nbsp</td>
+            </tr>
+            <tr>
+                <td id="71">&nbsp</td>
+                <td id="72">&nbsp</td>
+                <td id="73">&nbsp</td>
+                <td id="74">&nbsp</td>
+                <td id="75">&nbsp</td>
+                <td id="76">&nbsp</td>
+                <td id="77">&nbsp</td>
+                <td id="78">&nbsp</td>
+                <td id="79">&nbsp</td>
+                <td id="80">&nbsp</td>
+            </tr>
+            <tr>
+                <td id="81">&nbsp</td>
+                <td id="82">&nbsp</td>
+                <td id="83">&nbsp</td>
+                <td id="84">&nbsp</td>
+                <td id="85">&nbsp</td>
+                <td id="86">&nbsp</td>
+                <td id="87">&nbsp</td>
+                <td id="88">&nbsp</td>
+                <td id="89">&nbsp</td>
+                <td id="90">&nbsp</td>
+            </tr>
+            <tr>
+                <td id="91">&nbsp</td>
+                <td id="92">&nbsp</td>
+                <td id="93">&nbsp</td>
+                <td id="94">&nbsp</td>
+                <td id="95">&nbsp</td>
+                <td id="96">&nbsp</td>
+                <td id="97">&nbsp</td>
+                <td id="98">&nbsp</td>
+                <td id="99">&nbsp</td>
+                <td id="100">&nbsp</td>
+            </tr>
+            <tr>
+                <td id="comandos" colspan="10">
+                    <button id="Direita"><img src="Imagens/comandos/setaDireita.png" alt="Seta Direita"></button>
+                    <button id="Esquerda"><img src="Imagens/comandos/setaEsquerda.png" alt="Seta Esquerda"></button>
+                    <button id="Cima"><img src="Imagens/comandos/setaCima.png" alt="Seta Cima"></button>
+                    <button id="Baixo" ><img src="Imagens/comandos/setaBaixo.png" alt="Seta Baixo"></button>
+                    <button id="Pular" disabled><img src="Imagens/comandos/pular.png" alt="Botao pular"></button>
+                    <button id="Abaixar" disabled><img src="Imagens/comandos/abaixar.png" alt="Botao Abaixar"></button>
+                    <button id="iniciar"><img src="Imagens/comandos/iniciar.png" alt="iniciar"></button>
+                </td>
+            </tr>
+        </table>
+        <div class="fundo">
+            <div class="ganhou">
+                <img src="Imagens/tela-vitoria/venceuImage.jpg" alt="Ganhou">
+                <h1>Parabéns!</h1>
+                <h2>Você venceu!</h2>
+            </div>
+        </div>
+
+        <div class="jogosFundo">
+
+            <div class="jogo1">
+
+                <div class="jogo1Content">
+                    <div class="titulo">
+                        <h1>Anime seus companheiros!</h1>
+                    </div>
+                    <div class="introducao">
+                        <div class="explicacao">
+                            <h2>Um dos piores problemas em uma viagem a barco é o entreterimento. Não conseguimos fazer nada durante uma viagem pirata!! Por isso, você como um bom monandante, irá pegar algumas cervejas que seus tripulantes viram boiando no mar. Para isso, seja mais rápido que a correnteza e anime seus companheiros!!</h2>
+                            <button id="comecar1">Começar</button>
+                        </div>
+                    </div>
+
+                    <div class="jogatina1">
+                        <div class="botoes">
+                            <button id="b1" class="botoesJogatina1"></button>
+                            <button id="b2" class="botoesJogatina1"></button>
+                            <button id="b3" class="botoesJogatina1"></button><br>
+                            <button id="b4" class="botoesJogatina1"></button>
+                            <button id="b5" class="botoesJogatina1"></button>
+                            <button id="b6" class="botoesJogatina1"></button><br>
+                            <button id="b7" class="botoesJogatina1"></button>
+                            <button id="b8" class="botoesJogatina1"></button>
+                            <button id="b9" class="botoesJogatina1"></button>
+                        </div>
+                        <div class="temperamentoPiratas">
+                            <img src="Imagens/jogoCerveja/pirataBravo.png" alt="StatusPirata" id="rostoPirata">
+                            <div class="barraSatisfacao">
+                                <div id="pintura"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="telaVitoria">
+                    <img src="Imagens/telasFimJogo/pirataFinalizacao.png" alt="Pirata Vitorioso">
+                    <h1>Você Conseguiu animar sua tripulação!</h1><br>
+                    <h2>Agora siga caminho e chegue até o seu objetivo.</h2>
+                    <button class="fecharJogo">Fechar</button>
+                </div>
+                <div class="telaDerrota">
+                    <img src="Imagens/telasFimJogo/pirataDerrota.png" alt="Pirata perdedor">
+                    <h1>Você não conseguiu animar sua tripulação!</h1><br>
+                    <h2>Levante a cabeça e continue a viagem! Porém, acaba de perder uma vida</h2>
+                    <button class="fecharJogo">Fechar</button>
+                </div>
+
+            </div>
+
+
+
+            <div class="jogo2">
+                <div class="jogo2Content">
+                    <div class="introducao2">
+                        <div class="titulo2"></div>
+                        <h1>Duelo de gigantes</h1>
+                        <h2>Durante uma das pausas da viagem, você e sua tripulação pararam num bar, beber, se divertir um pouco. Porém, alguém de seus piratas acabou mexendo com o homem errado! Agora enfrente-o numa batalha e veja quem sairá vitorioso!</h2>
+                        <button id="comecarJogo2">Começar!</button>
+                    </div>
+
+                    <div class="jogatina2">
+                        <div class="comandoDuelo"><img src="" alt=""></div>
+                        <h1 class="tempoRound">10</h1>
+                        <img id="usuarioDuelo" src="Imagens/jogoDuelo/reserva.gif" alt="Seu Pirata">
+                        <img id="vilaoDuelo" src="Imagens/jogoDuelo/VilaoDuelo.gif" alt="Vilão">
+                        <div class="balas"> <img src="Imagens/jogoDuelo/balas.png" alt="">X:<span id="numeroBalas">0</span></div>
+                        <div class="balasVilao"><img src="Imagens/jogoDuelo/balas.png" alt="">X:<span id="numeroBalasVilao">1</span></div>
+
+                        <div class="interacaoUser2">
+                            <div class="containerBotaoAtirar contairnerBotoesJogatina2">
+                                <button id="atirar" class="botoesJogatina2" > ATIRAR</button>
+                                <img class="imagensBotoesJogatina2" src="Imagens/jogoDuelo/Pistola.png" alt="">
+                            </div>
+
+                            <div class="containerBotaoRecarregar contairnerBotoesJogatina2">
+                                <button id="recarregar" class="botoesJogatina2"> RELOAD</button>
+                                <img class="imagensBotoesJogatina2" src="Imagens/jogoDuelo/balas.png" alt="">
+                            </div>
+
+                            <div class="containerBotaoDefender contairnerBotoesJogatina2">
+                                <button id="defender" class="botoesJogatina2"> DEFENDER</button>
+                                <img class="imagensBotoesJogatina2" src="Imagens/jogoDuelo/escudo.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="telaVitoria2">
+                        <img src="Imagens/telasFimJogo/pirataFinalizacao.png" alt="Pirata Vitorioso">
+                        <h1>Você Conseguiu derrotar o adverário!</h1><br>
+                        <h2>Agora siga caminho e chegue até o seu objetivo.</h2>
+                        <button class="fecharJogo">Fechar</button>
+                    </div>
+
+                    <div class="telaDerrota2">
+                        <img src="Imagens/telasFimJogo/pirataFinalizacao.png" alt="Pirata perdedor">
+                        <h1>Você não conseguiu derrotar o desafiante..</h1><br>
+                        <h2>Levante a cabeça e continue a viagem! Porém, acaba de perder uma vida</h2>
+                        <button class="fecharJogo">Fechar</button>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+</html>
